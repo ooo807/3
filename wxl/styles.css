@@ -1,0 +1,30 @@
+body, html {  
+    height: 100%;  
+    margin: 0;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    background-color: #f0f0f0;  
+}  
+  
+.animated-box {  
+    width: 100px;  
+    height: 100px;  
+    background-color: #4CAF50;  
+    position: absolute;  
+    left: 0;  
+    top: 0;  
+    animation: moveBox 5s infinite linear;  
+    animation-play-state: paused; /* 初始状态为暂停 */  
+}  
+  
+@keyframes moveBox {  
+    0% {  
+        left: 0;  
+        top: 0;  
+    }  
+    100% {  
+        left: calc(100% - 100px);  
+        top: calc(100% - 100px);  
+    }  
+}
